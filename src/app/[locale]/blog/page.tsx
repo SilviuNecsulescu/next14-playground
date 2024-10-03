@@ -6,6 +6,7 @@ export const revalidate = 0;
 
 export default async function BlogPage() {
   const limit = Math.floor(Math.random() * 9) + 1;
+  //fetch a random number of blog posts
   const res = await fetch(`https://dummyjson.com/posts?limit=${limit}`);
   const blogPosts = await res.json();
 
