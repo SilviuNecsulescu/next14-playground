@@ -1,4 +1,4 @@
-import logo from "@/assets/Logo.png";
+import logo from "../../assets/Logo.png";
 import Image from "next/image";
 import HeaderNavigation from "../headerNavigation/HeaderNavigation";
 import Search from "../search/Search";
