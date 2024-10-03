@@ -17,6 +17,6 @@ export const headerNavLinks = [
     id: 3,
     href: "/isr",
     icon: <WrenchIcon className="headerIcon" />,
-    label: "isr",
+    label: "ISR",
   },
 ];

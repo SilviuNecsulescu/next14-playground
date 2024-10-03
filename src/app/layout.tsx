@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import { Roboto } from "next/font/google";
 import "./globals.scss";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+
+const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700", "900"] });
 
 export const metadata: Metadata = {
   title: "NextJs Playground",
@@ -16,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <div className={`container ${roboto.className}`}>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

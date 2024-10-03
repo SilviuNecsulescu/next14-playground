@@ -2,6 +2,8 @@
 
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
+import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import styles from "./search.module.scss";
 
 export default function Search() {
   const router = useRouter();
@@ -12,12 +14,16 @@ export default function Search() {
   };
   return (
     <form onSubmit={(e) => handleOnSubmit(e)}>
-      <input
-        placeholder="Enter your name"
-        type="text"
-        onChange={(e) => setName(e.target.value)}
-      />
-      <button>Search</button>
+      <div className={styles.searchContainer}>
+        <input
+          placeholder="Enter your name"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <button className={styles.searchButton}>
+          <MagnifyingGlassIcon />
+        </button>
+      </div>
     </form>
   );
 }

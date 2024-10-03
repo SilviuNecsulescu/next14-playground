@@ -1,0 +1,28 @@
+.searchContainer {
+  display: flex;
+  position: relative;
+
+  input {
+    padding-right: 45px;
+  }
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  width: 45px;
+  height: 45px;
+  color: #ccc;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+
+  &:hover {
+    border-color: #2e2a2a;
+  }
+
+  &:hover {
+    color: #2e2a2a;
+  }
+}
