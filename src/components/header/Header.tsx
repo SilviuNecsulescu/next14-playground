@@ -9,7 +9,9 @@ export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <HeaderNavigation />
-      <Image src={logo} alt="Logo" width={100} height={100} />
+      <div className={styles.logoContainer}>
+        <Image src={logo} alt="Logo" width={100} height={100} />
+      </div>
       <div>
         <LanguageSwitcher />
         <Search />

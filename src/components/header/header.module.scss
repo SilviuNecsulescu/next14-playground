@@ -4,4 +4,12 @@
   padding: 20px 0;
   align-items: center;
   margin-bottom: 100px;
+
+  .logoContainer {
+    text-align: center;
+  }
+
+  * {
+    flex: 1;
+  }
 }
