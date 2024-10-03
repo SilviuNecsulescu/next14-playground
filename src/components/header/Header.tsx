@@ -1,4 +1,3 @@
-import logo from "../../assets/Logo.png";
 import Image from "next/image";
 import HeaderNavigation from "../headerNavigation/HeaderNavigation";
 import Search from "../search/Search";
@@ -10,7 +9,12 @@ export default function Header() {
     <header className={styles.headerContainer}>
       <HeaderNavigation />
       <div className={styles.logoContainer}>
-        <Image src={logo} alt="Logo" width={100} height={100} />
+        <Image
+          src="../../assets/Logo.png"
+          alt="Logo"
+          width={100}
+          height={100}
+        />
       </div>
       <div>
         <LanguageSwitcher />
