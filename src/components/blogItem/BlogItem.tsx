@@ -1,5 +1,5 @@
 import { Blog } from "@/utils/types";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import styles from "./blogItem.module.scss";
 
 export default function BlogList({ post }: { post: Blog }) {

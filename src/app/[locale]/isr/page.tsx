@@ -1,6 +1,6 @@
 import { Blog } from "@/utils/types";
 import styles from "./isr.module.scss";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 export default async function ISR() {
   const res = await fetch("https://dummyjson.com/posts?limit=5");

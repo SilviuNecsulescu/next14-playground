@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import styles from "./blogPost.module.scss";
 
 export default async function BlogPost({ params }: { params: { id: string } }) {

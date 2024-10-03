@@ -1,0 +1,8 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "SearchInput": {
+    "searchPlaceHolder": "Enter your name"
+  }
+}
