@@ -9,12 +9,7 @@ export default function Header() {
     <header className={styles.headerContainer}>
       <HeaderNavigation />
       <div className={styles.logoContainer}>
-        <Image
-          src="../../assets/Logo.png"
-          alt="Logo"
-          width={100}
-          height={100}
-        />
+        <Image src="/Logo.png" alt="Logo" width={100} height={100} />
       </div>
       <div>
         <LanguageSwitcher />
